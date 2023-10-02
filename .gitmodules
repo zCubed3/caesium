@@ -1,0 +1,3 @@
+[submodule "deps/rgml"]
+	path = deps/rgml
+	url = https://github.com/zCubed3/rgml.git
