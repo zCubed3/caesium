@@ -25,7 +25,13 @@ tracing-tracy = { version = "0.10.4", optional = true }
 tracing-subscriber = { version = "0.3.17", optional = true }
 
 rand = "0.8.5"
+pixels = "0.13.0"
+winit = "0.28.7"
+winit_input_helper = "0.14.1"
 
 [features]
 tracy = ["dep:tracing", "dep:tracing-tracy", "dep:tracing-subscriber"]
 default = ["tracy"]
+
+[profile.release]
+debug = 1
